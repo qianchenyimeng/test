@@ -21,7 +21,7 @@ public class ComputeController {
      * @param a:
      * @param b:
      * @return String
-     * @method add
+     * @method add =add
      * @author wuwenjin
      * @date 2024-12-11 14:39:16
      * @description 新增方法test
