@@ -11,13 +11,22 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ComputeController {
-
+    //
     private final Logger logger = Logger.getLogger(getClass());
 
     @Autowired
     private DiscoveryClient client;
 
-    @RequestMapping(value = "/add" ,method = RequestMethod.GET)
+    /**
+     * @param a:
+     * @param b:
+     * @return String
+     * @method add
+     * @author wuwenjin
+     * @date 2024-12-11 14:39:16
+     * @description 新增方法
+     */
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(@RequestParam Integer a, @RequestParam Integer b) {
         ServiceInstance instance = client.getLocalServiceInstance();
         Integer r = a + b;
