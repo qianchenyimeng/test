@@ -24,6 +24,7 @@ public class ComputeController {
      * @method add
      * @author wuwenjin
      * @date 2024-12-11 14:39:16
+     * @description 新增方法 哈哈哈
      * @description 新增方法 211111111
      */
     @RequestMapping(value = "/add", method = RequestMethod.GET)
